@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="academyDataSet" targetNamespace="http://tempuri.org/academyDataSet.xsd" xmlns:mstns="http://tempuri.org/academyDataSet.xsd" xmlns="http://tempuri.org/academyDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="academyConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="academyConnectionString (MySettings)" PropertyReference="ApplicationSettings.Acadimey.My.MySettings.GlobalReference.Default.academyConnectionString" Provider="Devart.Data.MySql" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="std_infoTableAdapter" GeneratorDataComponentClassName="std_infoTableAdapter" Name="std_info" UserDataComponentName="std_infoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="academyConnectionString (MySettings)" DbObjectName="academy.std_info" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT id, name_std, id_std, name_mother, id_std_h FROM academy.std_info</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="id" DataSetColumn="id" />
+              <Mapping SourceColumn="name_std" DataSetColumn="name_std" />
+              <Mapping SourceColumn="id_std" DataSetColumn="id_std" />
+              <Mapping SourceColumn="name_mother" DataSetColumn="name_mother" />
+              <Mapping SourceColumn="id_std_h" DataSetColumn="id_std_h" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="academyDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="academyDataSet" msprop:Generator_UserDSName="academyDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="std_info" msprop:Generator_TableClassName="std_infoDataTable" msprop:Generator_TableVarName="tablestd_info" msprop:Generator_TablePropName="std_info" msprop:Generator_RowDeletingName="std_infoRowDeleting" msprop:Generator_RowChangingName="std_infoRowChanging" msprop:Generator_RowEvHandlerName="std_infoRowChangeEventHandler" msprop:Generator_RowDeletedName="std_infoRowDeleted" msprop:Generator_UserTableName="std_info" msprop:Generator_RowChangedName="std_infoRowChanged" msprop:Generator_RowEvArgName="std_infoRowChangeEvent" msprop:Generator_RowClassName="std_infoRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="id" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnid" msprop:Generator_ColumnPropNameInRow="id" msprop:Generator_ColumnPropNameInTable="idColumn" msprop:Generator_UserColumnName="id" type="xs:long" />
+              <xs:element name="name_std" msprop:Generator_ColumnVarNameInTable="columnname_std" msprop:Generator_ColumnPropNameInRow="name_std" msprop:Generator_ColumnPropNameInTable="name_stdColumn" msprop:Generator_UserColumnName="name_std" type="xs:string" />
+              <xs:element name="id_std" msprop:Generator_ColumnVarNameInTable="columnid_std" msprop:Generator_ColumnPropNameInRow="id_std" msprop:Generator_ColumnPropNameInTable="id_stdColumn" msprop:Generator_UserColumnName="id_std" type="xs:string" />
+              <xs:element name="name_mother" msprop:Generator_ColumnVarNameInTable="columnname_mother" msprop:Generator_ColumnPropNameInRow="name_mother" msprop:Generator_ColumnPropNameInTable="name_motherColumn" msprop:Generator_UserColumnName="name_mother" type="xs:string" />
+              <xs:element name="id_std_h" msprop:Generator_ColumnVarNameInTable="columnid_std_h" msprop:Generator_ColumnPropNameInRow="id_std_h" msprop:Generator_ColumnPropNameInTable="id_std_hColumn" msprop:Generator_UserColumnName="id_std_h" type="xs:string" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1">
+      <xs:selector xpath=".//mstns:std_info" />
+      <xs:field xpath="mstns:id" />
+    </xs:unique>
+    <xs:unique name="Constraint2">
+      <xs:selector xpath=".//mstns:std_info" />
+      <xs:field xpath="mstns:id_std_h" />
+    </xs:unique>
+    <xs:unique name="Constraint3" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:std_info" />
+      <xs:field xpath="mstns:id_std" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,972 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{541AA18A-BFC6-4436-B1EF-A267370762EB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Acadimey.splash</StartupObject>
+    <RootNamespace>Acadimey</RootNamespace>
+    <AssemblyName>Acadimey</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Acadimey.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Acadimey.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data, Version=5.0.1944.0, Culture=neutral, PublicKeyToken=09af7300eec23701" />
+    <Reference Include="Devart.Data.MySql, Version=8.10.1152.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Charts.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dashboard.v18.1.Win, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Data.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.DataAccess.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Map.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.PivotGrid.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Printing.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.RichEdit.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Sparkline.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.SpellChecker.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.TreeMap.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Utils.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.UI, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraCharts.v18.1.Wizard, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraEditors.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Presets, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGauges.v18.1.Win, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraLayout.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraMap.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPivotGrid.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraRichEdit.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Core, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraScheduler.v18.1.Extensions, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraSpellChecker.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeMap.v18.1, Version=18.1.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="itextsharp, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.13\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.licensekey, Version=1.0.4.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.licensekey.1.0.4\lib\itextsharp.licensekey.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.pdfa, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.pdfa.5.5.13\lib\itextsharp.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp.xtra, Version=5.5.13.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itextsharp.xtra.5.5.13\lib\itextsharp.xtra.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialSkin, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialSkin.Updated.0.2.2\lib\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Downloads\MySql.Data.DLL</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Remoting" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="UIAutomationClient" />
+    <Reference Include="VncSharp">
+      <HintPath>D:\dll\VncSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft" />
+    <Import Include="Microsoft.CSharp" />
+    <Import Include="Microsoft.SqlServer" />
+    <Import Include="Microsoft.SqlServer.Server" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="Microsoft.VisualBasic.ApplicationServices" />
+    <Import Include="Microsoft.VisualBasic.CompilerServices" />
+    <Import Include="Microsoft.VisualBasic.Devices" />
+    <Import Include="Microsoft.VisualBasic.FileIO" />
+    <Import Include="Microsoft.VisualBasic.Logging" />
+    <Import Include="Microsoft.VisualBasic.MyServices" />
+    <Import Include="Microsoft.VisualBasic.MyServices.Internal" />
+    <Import Include="Microsoft.Win32" />
+    <Import Include="Microsoft.Win32.SafeHandles" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="about.Designer.vb">
+      <DependentUpon>about.vb</DependentUpon>
+    </Compile>
+    <Compile Include="about.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="academyDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>academyDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="add fees.Designer.vb">
+      <DependentUpon>add fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="add fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="atendees.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>atendees.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="atendees_exam.Designer.vb">
+      <DependentUpon>atendees_exam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="atendees_exam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attendees.Designer.vb">
+      <DependentUpon>attendees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="attendees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="certificate.Designer.vb">
+      <DependentUpon>certificate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="certificate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="clinic.Designer.vb">
+      <DependentUpon>clinic.vb</DependentUpon>
+    </Compile>
+    <Compile Include="clinic.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="control.Designer.vb">
+      <DependentUpon>control.vb</DependentUpon>
+    </Compile>
+    <Compile Include="control.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.vb">
+      <DependentUpon>Form4.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form5.Designer.vb">
+      <DependentUpon>Form5.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form5.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.vb">
+      <DependentUpon>Form8.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form8.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ID CardMaker.Designer.vb">
+      <DependentUpon>ID CardMaker.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ID CardMaker.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ip.Designer.vb">
+      <DependentUpon>ip.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ip.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mol.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>mol.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="mol7.Designer.vb">
+      <DependentUpon>mol7.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mol7.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="mosgel.Designer.vb">
+      <DependentUpon>mosgel.vb</DependentUpon>
+    </Compile>
+    <Compile Include="mosgel.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="process.Designer.vb">
+      <DependentUpon>process.vb</DependentUpon>
+    </Compile>
+    <Compile Include="process.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="process_load.Designer.vb">
+      <DependentUpon>process_load.vb</DependentUpon>
+    </Compile>
+    <Compile Include="process_load.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="query_result.Designer.vb">
+      <DependentUpon>query_result.vb</DependentUpon>
+    </Compile>
+    <Compile Include="query_result.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="resY.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>resY.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="R_liststd.Designer.vb">
+      <DependentUpon>R_liststd.vb</DependentUpon>
+    </Compile>
+    <Compile Include="R_liststd.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_acount.Designer.vb">
+      <DependentUpon>HR_acount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR_acount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_add_staff.Designer.vb">
+      <DependentUpon>HR_add_staff.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR_add_staff.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HR_fees.Designer.vb">
+      <DependentUpon>HR_fees.vb</DependentUpon>
+    </Compile>
+    <Compile Include="HR_fees.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="I_Book.Designer.vb">
+      <DependentUpon>I_Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="I_Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="liststdd.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>liststdd.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="main_book.Designer.vb">
+      <DependentUpon>main_book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main_book.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb">
+    </Compile>
+    <Compile Include="msgshow.Designer.vb">
+      <DependentUpon>msgshow.vb</DependentUpon>
+    </Compile>
+    <Compile Include="msgshow.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="note.Designer.vb">
+      <DependentUpon>note.vb</DependentUpon>
+    </Compile>
+    <Compile Include="note.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="o_Book.Designer.vb">
+      <DependentUpon>o_Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="o_Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="process_Book.Designer.vb">
+      <DependentUpon>process_Book.vb</DependentUpon>
+    </Compile>
+    <Compile Include="process_Book.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="record_academy.Designer.vb">
+      <DependentUpon>record_academy.vb</DependentUpon>
+    </Compile>
+    <Compile Include="record_academy.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reji.Designer.vb">
+      <DependentUpon>reji.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reji.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rep_payment.Designer.vb">
+      <DependentUpon>rep_payment.vb</DependentUpon>
+    </Compile>
+    <Compile Include="rep_payment.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="res.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="resul.Designer.vb">
+      <DependentUpon>resul.vb</DependentUpon>
+    </Compile>
+    <Compile Include="resul.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="res_lec.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>res_lec.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="R_mol7ag.Designer.vb">
+      <DependentUpon>R_mol7ag.vb</DependentUpon>
+    </Compile>
+    <Compile Include="R_mol7ag.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R_result_year.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R_result_year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="R_res_year.Designer.vb">
+      <DependentUpon>R_res_year.vb</DependentUpon>
+    </Compile>
+    <Compile Include="R_res_year.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="r_stu.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>r_stu.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="R_student.Designer.vb">
+      <DependentUpon>R_student.vb</DependentUpon>
+    </Compile>
+    <Compile Include="R_student.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="R_year.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>R_year.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="scheduelrDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>scheduelrDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="schedular.Designer.vb">
+      <DependentUpon>schedular.vb</DependentUpon>
+    </Compile>
+    <Compile Include="schedular.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="set_res.Designer.vb">
+      <DependentUpon>set_res.vb</DependentUpon>
+    </Compile>
+    <Compile Include="set_res.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="set_std_to_exam.Designer.vb">
+      <DependentUpon>set_std_to_exam.vb</DependentUpon>
+    </Compile>
+    <Compile Include="set_std_to_exam.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="splash.Designer.vb">
+      <DependentUpon>splash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="splash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="staff_atendes.Designer.vb">
+      <DependentUpon>staff_atendes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="staff_atendes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tagmeed.Designer.vb">
+      <DependentUpon>tagmeed.vb</DependentUpon>
+    </Compile>
+    <Compile Include="tagmeed.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="about.resx">
+      <DependentUpon>about.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="add fees.resx">
+      <DependentUpon>add fees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="atendees_exam.resx">
+      <DependentUpon>atendees_exam.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attendees.resx">
+      <DependentUpon>attendees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="certificate.resx">
+      <DependentUpon>certificate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="clinic.resx">
+      <DependentUpon>clinic.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="control.resx">
+      <DependentUpon>control.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form5.resx">
+      <DependentUpon>Form5.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ID CardMaker.resx">
+      <DependentUpon>ID CardMaker.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ip.resx">
+      <DependentUpon>ip.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="mol7.resx">
+      <DependentUpon>mol7.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mol7ag.rdlc" />
+    <EmbeddedResource Include="mosgel.resx">
+      <DependentUpon>mosgel.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\licenses.licx" />
+    <EmbeddedResource Include="process.resx">
+      <DependentUpon>process.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="process_load.resx">
+      <DependentUpon>process_load.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="query_result.rdlc" />
+    <EmbeddedResource Include="query_result.resx">
+      <DependentUpon>query_result.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_liststd.resx">
+      <DependentUpon>R_liststd.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_acount.resx">
+      <DependentUpon>HR_acount.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_add_staff.resx">
+      <DependentUpon>HR_add_staff.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HR_fees.resx">
+      <DependentUpon>HR_fees.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="I_Book.resx">
+      <DependentUpon>I_Book.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="liststd.rdlc" />
+    <EmbeddedResource Include="main_book.resx">
+      <DependentUpon>main_book.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="msgshow.resx">
+      <DependentUpon>msgshow.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="note.resx">
+      <DependentUpon>note.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="o_Book.resx">
+      <DependentUpon>o_Book.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="process_Book.resx">
+      <DependentUpon>process_Book.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="r.rdlc" />
+    <EmbeddedResource Include="record_academy.resx">
+      <DependentUpon>record_academy.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reji.resx">
+      <DependentUpon>reji.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rep_payment.resx">
+      <DependentUpon>rep_payment.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="resul.resx">
+      <DependentUpon>resul.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_mol7ag.resx">
+      <DependentUpon>R_mol7ag.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_res_year.resx">
+      <DependentUpon>R_res_year.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="r_student.rdlc" />
+    <EmbeddedResource Include="R_student.resx">
+      <DependentUpon>R_student.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="R_year.rdlc" />
+    <EmbeddedResource Include="schedular.resx">
+      <DependentUpon>schedular.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="set_res.resx">
+      <DependentUpon>set_res.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="set_std_to_exam.resx">
+      <DependentUpon>set_std_to_exam.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="splash.resx">
+      <DependentUpon>splash.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="staff_atendes.resx">
+      <DependentUpon>staff_atendes.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tagmeed.resx">
+      <DependentUpon>tagmeed.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="academyDataSet.xsc">
+      <DependentUpon>academyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="academyDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>academyDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="academyDataSet.xss">
+      <DependentUpon>academyDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="app.config" />
+    <None Include="atendees.xsc">
+      <DependentUpon>atendees.xsd</DependentUpon>
+    </None>
+    <None Include="atendees.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>atendees.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="atendees.xss">
+      <DependentUpon>atendees.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsc">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataSet1.xss">
+      <DependentUpon>DataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="liststdd.xsc">
+      <DependentUpon>liststdd.xsd</DependentUpon>
+    </None>
+    <None Include="liststdd.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>liststdd.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="liststdd.xss">
+      <DependentUpon>liststdd.xsd</DependentUpon>
+    </None>
+    <None Include="mol.xsc">
+      <DependentUpon>mol.xsd</DependentUpon>
+    </None>
+    <None Include="mol.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>mol.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="mol.xss">
+      <DependentUpon>mol.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+    </None>
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication1.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication11.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication12.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication13.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication14.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MyApplication15.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings1.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings11.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings12.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings13.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings14.datasource" />
+    <None Include="My Project\DataSources\Acadimey.My.MySettings15.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="packages.config" />
+    <None Include="res.xsc">
+      <DependentUpon>res.xsd</DependentUpon>
+    </None>
+    <None Include="res.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>res.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="res.xss">
+      <DependentUpon>res.xsd</DependentUpon>
+    </None>
+    <None Include="resY.xsc">
+      <DependentUpon>resY.xsd</DependentUpon>
+    </None>
+    <None Include="resY.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>resY.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="resY.xss">
+      <DependentUpon>resY.xsd</DependentUpon>
+    </None>
+    <None Include="res_lec.xsc">
+      <DependentUpon>res_lec.xsd</DependentUpon>
+    </None>
+    <None Include="res_lec.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>res_lec.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="res_lec.xss">
+      <DependentUpon>res_lec.xsd</DependentUpon>
+    </None>
+    <None Include="R_result_year.xsc">
+      <DependentUpon>R_result_year.xsd</DependentUpon>
+    </None>
+    <None Include="R_result_year.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>R_result_year.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="R_result_year.xss">
+      <DependentUpon>R_result_year.xsd</DependentUpon>
+    </None>
+    <None Include="r_stu.xsc">
+      <DependentUpon>r_stu.xsd</DependentUpon>
+    </None>
+    <None Include="r_stu.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>r_stu.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="r_stu.xss">
+      <DependentUpon>r_stu.xsd</DependentUpon>
+    </None>
+    <None Include="R_year.xsc">
+      <DependentUpon>R_year.xsd</DependentUpon>
+    </None>
+    <None Include="R_year.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>R_year.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="R_year.xss">
+      <DependentUpon>R_year.xsd</DependentUpon>
+    </None>
+    <None Include="scheduelrDataSet.xsc">
+      <DependentUpon>scheduelrDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="scheduelrDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>scheduelrDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="scheduelrDataSet.xss">
+      <DependentUpon>scheduelrDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Sql.Server.Express.9.2">
+      <Visible>False</Visible>
+      <ProductName>SQL Server 2005 Express Edition SP2 %28x86%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="AxAcroPDFLib">
+      <Guid>{05BFD3F1-6319-4F30-B752-C7A22889BCC4}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="scheduelr.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="scheduelr_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>scheduelr.mdf</DependentUpon>
+    </Content>
+    <Content Include="SqlServerTypes\Loader.cs" />
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
